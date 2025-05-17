@@ -1,4 +1,7 @@
- 
+
+
+import function from *
+
 def menu():
  while(true):   
     print("seja bem vindo(a) ao sistema de cadastro")
@@ -9,11 +12,11 @@ def menu():
     opcao = input("escolha uma dessas opcoes")
 
     if opcao == '1':
-        cadastrarMissao()
+        cadastrarMissao(missao)
     elif opcao =='2':
-        listarMissoes()
+        listarMissoes(missao)
     elif opcao =='3':
-        simularLancamento()
+        simularLancamento(missao)
     elif opcao =='4':
          print("saindo....")
          break
